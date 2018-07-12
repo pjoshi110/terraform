@@ -3,6 +3,7 @@ node {
   checkout scm
 
   docker.build(env.JOB_NAME).inside {
-    sh 'script/ci'
+    # run any scripts or such here
+    # sh 'script/ci'
   }
 }
